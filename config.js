@@ -12,7 +12,7 @@ window.ANTWERK_CONFIG = {
   EXPO_NAME: "Antwerk",
   EXPO_DATE: "2026-11-05",
   DRAW_DATE: "2026-11-06",
-  PRIZE: "Dyson V12 Detect Slim Absolute",
+  PRIZE: "€500 cash",
 
   // Company
   COMPANY_NAME: "Immo Spot",

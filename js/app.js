@@ -70,7 +70,7 @@
       const p = box.dataset.prefix;
       const box3 = (q, k) => `<div class="field qbox" id="f-${p}-${q}"><label for="${p}-${q}" data-i18n="${k}"></label>` +
         `<input type="text" inputmode="numeric" id="${p}-${q}" autocomplete="off"><div class="err" id="e-${p}-${q}"></div></div>`;
-      box.innerHTML = `<div class="quiz-head"><span class="ic"><svg><use href="#i-prize"/></svg></span><div><b data-i18n="quizT"></b><small data-i18n="${p === "sq" ? "quizDopt" : "quizD"}"></small></div></div>` +
+      box.innerHTML = `<div class="quiz-head"><span class="ic"><svg><use href="#i-cash"/></svg></span><div><b data-i18n="quizT"></b><small data-i18n="${p === "sq" ? "quizDopt" : "quizD"}"></small></div></div>` +
         `<div class="qgroup"><div class="qtitle" data-i18n="qHead"></div>` +
         `<div class="qboxes">${box3("q1", "qSold")}${box3("q2", "qRented")}${box3("q3", "qManaged")}</div>` +
         `<div class="err" id="e-${p}-g"></div></div>` +

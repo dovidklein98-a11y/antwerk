@@ -28,3 +28,4 @@ a{color:var(--teal-ink);text-underline-offset:3px}
 .draft{background:#fff3c4;color:#4a3b00;border:1.5px solid #e0b800;border-radius:12px;padding:12px 16px;font-size:15px;font-weight:600;margin:0 0 14px}
 .todo{background:#fff3a3;color:#3d3300;border-radius:4px;padding:0 4px;box-shadow:0 0 0 1px #e0c200 inset}
 .foot{margin-top:40px;font-size:14px;color:var(--muted)}
+.top .antwerk-logo{display:block;height:34px;width:auto;border-radius:7px;box-shadow:0 0 0 1px rgba(255,255,255,.22)}
