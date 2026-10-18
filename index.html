@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#005247">
+<meta name="robots" content="noindex">
+<title>Antwerk 2026 · Immo-Spot</title>
+<link rel="icon" href="assets/icon.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="demoBanner" class="demo" hidden></div>
+
+<header class="top">
+  <img class="logo" src="assets/logo.png" alt="Immo-Spot – Hét adres voor al uw vastgoed">
+  <div class="langs" role="group" aria-label="Language / Taal">
+    <button type="button" class="lang" data-lang="nl" aria-pressed="true">NL</button>
+    <button type="button" class="lang" data-lang="en" aria-pressed="false">EN</button>
+  </div>
+</header>
+
+<main class="wrap">
+
+<!-- ============ HOME ============ -->
+<section id="s-home" class="screen">
+  <p class="eyebrow"><span data-i18n="expoLine"></span></p>
+  <h1 data-i18n="homeTitle"></h1>
+  <p class="lead" data-i18n="homeLead"></p>
+
+  <div class="prize">
+    <span class="prize-ico" aria-hidden="true">🎁</span>
+    <div>
+      <strong id="prizeLine"></strong>
+      <div class="small" data-i18n="prizeFree"></div>
+    </div>
+  </div>
+
+  <button type="button" class="big primary" id="goA">
+    <span class="big-t" data-i18n="pathATitle"></span>
+    <span class="big-s" data-i18n="pathASub"></span>
+  </button>
+  <button type="button" class="big secondary" id="goB">
+    <span class="big-t" data-i18n="pathBTitle"></span>
+    <span class="big-s" data-i18n="pathBSub"></span>
+  </button>
+</section>
+
+<!-- ============ PATH A FORM ============ -->
+<section id="s-a" class="screen" hidden>
+  <button type="button" class="back" data-back><span aria-hidden="true">←</span> <span data-i18n="back"></span></button>
+  <h2 data-i18n="aTitle"></h2>
+  <form id="formA" novalidate autocomplete="on">
+    <input type="text" name="website" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+    <fieldset class="field" id="fServices">
+      <legend data-i18n="servicesLabel"></legend>
+      <div class="chips" id="serviceChips"></div>
+      <p class="err" data-err="services" hidden></p>
+    </fieldset>
+
+    <div class="field">
+      <label for="aName" data-i18n="name"></label>
+      <input id="aName" name="name" type="text" autocomplete="name" maxlength="120">
+      <p class="err" data-err="name" hidden></p>
+    </div>
+    <div class="field">
+      <label for="aEmail" data-i18n="email"></label>
+      <input id="aEmail" name="email" type="email" inputmode="email" autocomplete="email" autocapitalize="off" maxlength="160">
+      <p class="err" data-err="email" hidden></p>
+    </div>
+    <div class="field">
+      <label for="aPhone"><span data-i18n="phone"></span> <span class="opt" data-i18n="optional"></span></label>
+      <input id="aPhone" name="phone" type="tel" inputmode="tel" autocomplete="tel" maxlength="40">
+    </div>
+    <div class="field">
+      <label for="aType"><span data-i18n="propType"></span> <span class="opt" data-i18n="optional"></span></label>
+      <select id="aType" name="propertyType"></select>
+    </div>
+    <div class="field">
+      <label for="aLoc"><span data-i18n="propLoc"></span> <span class="opt" data-i18n="optional"></span></label>
+      <input id="aLoc" name="propertyLocation" type="text" maxlength="160" data-i18n-ph="propLocPh">
+      <p class="hint" data-i18n="propLocHint"></p>
+    </div>
+    <div class="field">
+      <label for="aPrice"><span data-i18n="price"></span> <span class="opt" data-i18n="optional"></span></label>
+      <select id="aPrice" name="priceRange"></select>
+      <p class="hint" data-i18n="priceHint"></p>
+    </div>
+    <div class="field">
+      <label for="aMsg"><span data-i18n="message"></span> <span class="opt" data-i18n="optional"></span></label>
+      <textarea id="aMsg" name="message" rows="4" maxlength="1500"></textarea>
+    </div>
+
+    <div class="consents" id="consentsA"></div>
+    <p class="err form-err" id="errA" role="alert" hidden></p>
+    <button type="submit" class="big primary submit" id="submitA"><span class="big-t" data-i18n="submit"></span></button>
+  </form>
+</section>
+
+<!-- ============ PATH B QUIZ ============ -->
+<section id="s-quiz" class="screen" hidden>
+  <button type="button" class="back" data-back><span aria-hidden="true">←</span> <span data-i18n="back"></span></button>
+  <p class="eyebrow" id="quizProgress"></p>
+  <h2 id="quizQ"></h2>
+  <div class="answers" id="quizAnswers"></div>
+  <p class="small quiz-note" data-i18n="quizNote"></p>
+</section>
+
+<!-- ============ PATH B FORM ============ -->
+<section id="s-b" class="screen" hidden>
+  <div class="score-card">
+    <div class="score-n" id="scoreN"></div>
+    <div id="scoreText"></div>
+  </div>
+  <h2 data-i18n="bTitle"></h2>
+  <form id="formB" novalidate autocomplete="on">
+    <input type="text" name="website" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+    <div class="field">
+      <label for="bName" data-i18n="name"></label>
+      <input id="bName" name="name" type="text" autocomplete="name" maxlength="120">
+      <p class="err" data-err="name" hidden></p>
+    </div>
+    <div class="field">
+      <label for="bEmail" data-i18n="email"></label>
+      <input id="bEmail" name="email" type="email" inputmode="email" autocomplete="email" autocapitalize="off" maxlength="160">
+      <p class="err" data-err="email" hidden></p>
+    </div>
+    <div class="consents" id="consentsB"></div>
+    <p class="err form-err" id="errB" role="alert" hidden></p>
+    <button type="submit" class="big primary submit" id="submitB"><span class="big-t" data-i18n="submitB"></span></button>
+  </form>
+</section>
+
+<!-- ============ THANK YOU ============ -->
+<section id="s-thanks" class="screen thanks" hidden>
+  <div class="check" aria-hidden="true">✓</div>
+  <h2 id="thTitle"></h2>
+  <p class="lead" id="thEntry"></p>
+  <p id="thMail"></p>
+  <p id="thContact"></p>
+  <p class="small" id="thDup" hidden></p>
+  <button type="button" class="big primary" id="again"><span class="big-t" id="againT"></span></button>
+  <div class="bar" aria-hidden="true"><div id="barFill"></div></div>
+</section>
+
+</main>
+
+<footer class="foot">
+  <span>© Immo-Spot · info@immo-spot.be</span>
+  <span><a id="lnkPrivacy" href="privacy.html" target="_blank" rel="noopener" data-i18n="privacy"></a> · <a id="lnkRules" href="rules.html" target="_blank" rel="noopener" data-i18n="rules"></a></span>
+</footer>
+
+<script src="config.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
