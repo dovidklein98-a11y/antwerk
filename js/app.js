@@ -1,5 +1,5 @@
 /* Antwerk 2026 – Immo Spot : visitor registration (static site, no build step).
-   Design/flow follow the approved Claude artifact. Storage = POST to the Google Apps Script web app
+   Design/flow follow the approved design. Storage = POST to the Google Apps Script web app
    (config.js > ENDPOINT_URL). Nothing is kept in the browser; the Google Sheet is the admin view. */
 (() => {
   "use strict";
