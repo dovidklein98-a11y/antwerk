@@ -7,7 +7,7 @@ window.ANTWERK_CONFIG = {
 
   // 2) The public web address visitors will open (used by make_qr.py to build qr.png).
   //    PLACEHOLDER - replace with the real address once hosting is decided.
-  PUBLIC_URL: "https://antwerk.example.com/",
+  PUBLIC_URL: "https://dovidklein98-a11y.github.io/antwerk/",
 
   // Event + draw
   EXPO_NAME: "Antwerk",
