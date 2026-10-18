@@ -1,22 +1,21 @@
-/* ===== Antwerk 2026 – Immo-Spot : site configuration =====
+/* ===== Antwerk 2026 – Immo Spot : site configuration =====
    Edit the values below. After changing PUBLIC_URL run:  python3 make_qr.py   */
 window.ANTWERK_CONFIG = {
   // 1) Paste the Google Apps Script Web App URL here (ends with /exec). See README.
-  //    While empty, the form shows a clear "not connected yet" message and saves nothing.
+  //    While empty, the forms show "not connected, nothing saved" and keep the visitor's data on screen.
   ENDPOINT_URL: "",
 
-  // 2) The public web address visitors will open (used by make_qr.py to build qr.png).
-  //    PLACEHOLDER - replace with the real address once hosting is decided.
+  // 2) The public web address visitors open (used by make_qr.py to build qr.png).
   PUBLIC_URL: "https://dovidklein98-a11y.github.io/antwerk/",
 
-  // Event + draw
+  // Event + draw (texts on the site itself come from js/i18n.js; Code.gs has its own copy for the e-mails)
   EXPO_NAME: "Antwerk",
-  EXPO_DATE: { nl: "5 november 2026", en: "5 November 2026" },
-  DRAW_DATE: { nl: "6 november 2026", en: "6 November 2026" },
-  PRIZE: { nl: "een elektrische step", en: "an electric scooter" },   // example prize - change freely
+  EXPO_DATE: "2026-11-05",
+  DRAW_DATE: "2026-11-06",
+  PRIZE: "Dyson V12 Detect Slim Absolute",
 
   // Company
-  COMPANY_NAME: "Immo-Spot",
+  COMPANY_NAME: "Immo Spot",
   CONTACT_EMAIL: "info@immo-spot.be",
 
   // Kiosk / tablet behaviour
