@@ -3,7 +3,7 @@
 window.ANTWERK_CONFIG = {
   // 1) Paste the Google Apps Script Web App URL here (ends with /exec). See README.
   //    While empty, the forms show "not connected, nothing saved" and keep the visitor's data on screen.
-  ENDPOINT_URL: "",
+  ENDPOINT_URL: "https://script.google.com/macros/s/AKfycbzfr2NXtSAuIvApVh-dDtzZ99s3f26diA0FKfwTkejZUJ77EIvzYn24YgtYm4EZPUTeEw/exec",
 
   // 2) The public web address visitors open (used by make_qr.py to build qr.png).
   PUBLIC_URL: "https://dovidklein98-a11y.github.io/antwerk/",
