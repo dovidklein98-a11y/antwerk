@@ -6,7 +6,7 @@ window.ANTWERK_CONFIG = {
   ENDPOINT_URL: "https://script.google.com/macros/s/AKfycbzfr2NXtSAuIvApVh-dDtzZ99s3f26diA0FKfwTkejZUJ77EIvzYn24YgtYm4EZPUTeEw/exec",
 
   // 2) The public web address visitors open (used by make_qr.py to build qr.png).
-  PUBLIC_URL: "https://dovidklein98-a11y.github.io/antwerk/",
+  PUBLIC_URL: "https://antwerk.immo-spot.be/",
 
   // Event + draw (texts on the site itself come from js/i18n.js; Code.gs has its own copy for the e-mails)
   EXPO_NAME: "Antwerk",
