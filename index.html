@@ -13,7 +13,7 @@
 </head>
 <body>
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
-  <symbol id="i-cash" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="6" width="19" height="12" rx="2.2"></rect><circle cx="12" cy="12" r="2.8"></circle><path d="M6 12h.01M18 12h.01"></path></symbol>
+  <symbol id="i-cash" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l9-7 9 7v9a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z"></path></symbol>
   <symbol id="i-ticket" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8a2 2 0 0 0 2-2h14a2 2 0 0 0 2 2v2a2 2 0 0 0 0 4v2a2 2 0 0 0-2 2H5a2 2 0 0 0-2-2v-2a2 2 0 0 0 0-4z"></path><path d="M14 6v12" stroke-dasharray="2 2"></path></symbol>
   <symbol id="i-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"></path></symbol>
 </svg>
@@ -32,14 +32,14 @@
       <div class="tagline">Hét adres voor al uw vastgoed</div>
     </div>
 
-    <div class="event-row"><img class="antwerk-logo" src="assets/antwerk_logo.png" alt="Antwerk" width="128" height="42"><div class="event"><span data-i18n="eventDate">5 nov 2026</span></div></div>
+    <div class="event-row"><img class="antwerk-logo" src="assets/antwerk_logo.png" alt="Antwerk" width="128" height="42"><div class="event"><span data-i18n="eventDate">4 nov 2026</span></div></div>
 
     <h1 data-i18n="headline">Klaar voor uw volgende stap in vastgoed?</h1>
     <p class="lede" data-i18n="lede">Laat uw gegevens achter. Een makelaar van Immo Spot neemt persoonlijk contact met u op.</p>
 
     <div class="prize">
       <div class="ic"><svg><use href="#i-cash"></use></svg></div>
-      <div><b data-i18n="prizeT">Win €500 cash</b><small data-i18n="prizeD">Een geldprijs van €500 cash. Schrijf u in en maak kans. Gratis deelname, geen aankoop nodig.</small></div>
+      <div><b data-i18n="prizeT">Win een Shabbat-uitje voor twee in Villa Altol</b><small data-i18n="prizeD">Een Shabbat-uitje voor twee in Villa Altol. Schrijf u in en maak kans. Gratis deelname, geen aankoop nodig.</small></div>
     </div>
 
     <ul class="services">
@@ -75,7 +75,7 @@
         <button type="button" class="path" id="go-raffle">
           <b data-i18n="pathBT">Ik doe alleen mee aan de wedstrijd</b>
           <span class="d" data-i18n="pathBD">Uw naam, contactgegevens en 2 korte vragen. We contacteren u enkel als u wint.</span>
-          <span class="ticket"><svg><use href="#i-cash"></use></svg><span data-i18n="pathBTag">Kans op €500 cash</span></span>
+          <span class="ticket"><svg><use href="#i-cash"></use></svg><span data-i18n="pathBTag">Kans op een Shabbat-uitje voor twee</span></span>
           <span class="arrow"><svg><use href="#i-arrow"></use></svg></span>
         </button>
       </div>
@@ -136,7 +136,7 @@
         </fieldset>
 
         <div class="field"><label for="notes" data-i18n="notes">Opmerkingen of vragen</label><textarea id="notes" data-i18n-ph="notesPh" placeholder="Bv. ik zoek een appartement met 2 slaapkamers en terras"></textarea></div>
-        <div class="raffle-note"><span class="ic"><svg><use href="#i-cash"></use></svg></span><span data-i18n="autoRaffle">U doet automatisch mee aan de wedstrijd voor €500 cash.</span></div>
+        <div class="raffle-note"><span class="ic"><svg><use href="#i-cash"></use></svg></span><span data-i18n="autoRaffle">U doet automatisch mee aan de wedstrijd voor een Shabbat-uitje voor twee in Villa Altol.</span></div>
         <div class="join-box">
           <label class="consent join"><input type="checkbox" id="sq-join"><span data-i18n="joinQuiz">Ik wil ook de wedstrijdvragen beantwoorden (niet verplicht).</span></label>
           <div class="quiz" data-prefix="sq" id="sq-quiz" hidden></div>
@@ -159,7 +159,7 @@
       <div class="view-head">
         <button type="button" class="back" data-back="" data-i18n="back">← Terug</button>
         <h2 data-i18n="raffleT">Doe mee aan de wedstrijd</h2>
-        <p data-i18n="raffleD">Beantwoord 2 korte vragen en maak kans op €500 cash.</p>
+        <p data-i18n="raffleD">Beantwoord 2 korte vragen en maak kans op een Shabbat-uitje voor twee in Villa Altol.</p>
       </div>
       <form id="raffle-form" novalidate="">
         <div class="grid2">
@@ -199,7 +199,7 @@
 
   </main>
 </div>
-<script src="config.js?v=2"></script>
+<script src="config.js"></script>
 <script src="js/i18n.js"></script>
 <script src="js/app.js"></script>
 </body>

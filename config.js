@@ -10,9 +10,9 @@ window.ANTWERK_CONFIG = {
 
   // Event + draw (texts on the site itself come from js/i18n.js; Code.gs has its own copy for the e-mails)
   EXPO_NAME: "Antwerk",
-  EXPO_DATE: "2026-11-05",
-  DRAW_DATE: "2026-11-06",
-  PRIZE: "€500 cash",
+  EXPO_DATE: "2026-11-04",
+  DRAW_DATE: "2026-11-05",
+  PRIZE: "Shabbat getaway for two at Villa Altol",
 
   // Company
   COMPANY_NAME: "Immo Spot",
